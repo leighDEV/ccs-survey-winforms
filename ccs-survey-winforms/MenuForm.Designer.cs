@@ -104,7 +104,7 @@
             this.MaximizeBox = false;
             this.Name = "MenuForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "MenuForm";
+            this.Text = "Survey - Menu";
             this.ResumeLayout(false);
             this.PerformLayout();
 

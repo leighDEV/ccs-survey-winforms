@@ -115,6 +115,7 @@
             this.rbS10_4 = new System.Windows.Forms.RadioButton();
             this.rbS10_5 = new System.Windows.Forms.RadioButton();
             this.lblS10 = new System.Windows.Forms.Label();
+            this.lblResult = new System.Windows.Forms.Label();
             this.pnlStudentInfo.SuspendLayout();
             this.pnlS1.SuspendLayout();
             this.pnlS2.SuspendLayout();
@@ -1096,6 +1097,15 @@
             this.lblS10.Text = "10. I get frustrated when the internet is slow, and as a result, I get stressed a" +
     "nd upset.";
             // 
+            // lblResult
+            // 
+            this.lblResult.Font = new System.Drawing.Font("Segoe UI Semilight", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResult.Location = new System.Drawing.Point(279, 481);
+            this.lblResult.Name = "lblResult";
+            this.lblResult.Size = new System.Drawing.Size(284, 25);
+            this.lblResult.TabIndex = 0;
+            this.lblResult.Text = "Result: ";
+            // 
             // AnswerSurveyForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 25F);
@@ -1108,6 +1118,7 @@
             this.Controls.Add(this.pnlStudentInfo);
             this.Controls.Add(this.lblChoices);
             this.Controls.Add(this.lblStatements);
+            this.Controls.Add(this.lblResult);
             this.Controls.Add(this.lblDirections);
             this.Controls.Add(this.lblAnswerSurvey);
             this.Controls.Add(this.pnlS10);
@@ -1126,7 +1137,7 @@
             this.MaximizeBox = false;
             this.Name = "AnswerSurveyForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "AnswerSurveyForm";
+            this.Text = "Answer Survey";
             this.Load += new System.EventHandler(this.AnswerSurveyForm_Load);
             this.pnlStudentInfo.ResumeLayout(false);
             this.pnlStudentInfo.PerformLayout();
@@ -1244,5 +1255,6 @@
         private System.Windows.Forms.RadioButton rbS10_4;
         private System.Windows.Forms.RadioButton rbS10_5;
         private System.Windows.Forms.Label lblS10;
+        private System.Windows.Forms.Label lblResult;
     }
 }

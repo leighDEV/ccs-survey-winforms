@@ -51,11 +51,11 @@ namespace ccs_survey_winforms
         {
             if (tbName.Text == "" && cboCourse.Text == "" && cboAge.Text == "" && cboSex.Text == "")
             {
-
+                MessageBox.Show("Please fill out information!");
             }
             else
             {
-                // show the result here
+                lblResult.Text = "Result: "; // show the result of survey
                 MessageBox.Show("Successfully Submitted!");
             } 
         }
