@@ -14,22 +14,8 @@ namespace ccs_survey_winforms
 {
     public partial class StatisticsForm : Form
     {
-        int eighteen;
-        int nineteen;
-        int twenty;
-
-        int female;
-        int male;
-
-        int bscs;
-        int bsis;
-        int bsit;
-
-        int stronglyAgree;
-        int agree;
-        int neutral;
-        int disagree;
-        int stronglyDisagree;
+        int eighteen, nineteen, twenty, female, male, bscs, bsis, bsit;
+        int stronglyAgree, agree, neutral, disagree, stronglyDisagree;
 
         string[] arrayAge = File.ReadAllLines(@"D:\ccs-survey-winforms-textfiles\survey - age.txt");
 
@@ -47,7 +33,7 @@ namespace ccs_survey_winforms
         /// <summary>
         /// Reading age, sex, course from text files
         /// </summary>
-        public void ReadingStudentInfo()
+        private void ReadingStudentInfo()
         {
             // method for reading the age in the text file to show the statistics
             using (StreamReader readAge = new StreamReader(@"D:\ccs-survey-winforms-textfiles\survey - age.txt"))
@@ -107,7 +93,7 @@ namespace ccs_survey_winforms
         }
 
         // method for reading the results of the surveyees inside the text file for statistics
-        public void ReadingResults()
+        private void ReadingResults()
         {
             using (StreamReader readResults = File.OpenText(@"D:\ccs-survey-winforms-textfiles\survey - results.txt"))
             {
@@ -138,7 +124,7 @@ namespace ccs_survey_winforms
         }
 
         // method for writing the stats in a separate text file
-        public void WritingStats()
+        private void WritingStats()
         {
             using (StreamWriter ss = new StreamWriter(@"D:\ccs-survey-winforms-textfiles\survey - statistics.txt"))
             {
