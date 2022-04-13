@@ -58,7 +58,15 @@ namespace ccs_survey_winforms
                 TextFile textFile = new TextFile();
                 string age = cboAge.SelectedItem.ToString(); // i made it string instead of int
                 string sex = cboSex.SelectedItem.ToString();
-                string course = cboAge.SelectedItem.ToString();
+                string coursefull = cboCourse.SelectedItem.ToString();
+
+                string course;
+                if (coursefull.Equals("Computer Science"))
+                    course = "BSCS";
+                else if (coursefull.Equals("Information Science"))
+                    course = "BSIS";
+                else
+                    course = "BSIT";
 
                 textFile.WritingStudentInfo(age, sex, course);
                 lblResult.Text = "Result: "; // show the result of survey

@@ -17,14 +17,14 @@ namespace ccs_survey_winforms
 
             // writing students' information and their answers in a text file
             // i used append method in all the files to get all the updated information by the users
-            FileStream fs = new FileStream(@"D:\css-survey-winforms-textfiles\survey - info.txt", FileMode.Append, FileAccess.Write);
+            FileStream fs = new FileStream(@"D:\ccs-survey-winforms-textfiles\survey - info.txt", FileMode.Append, FileAccess.Write);
             using (StreamWriter sw = new StreamWriter(fs))
             {
                 // this is to get the place number of surveyee and appends it
                 int num = 0;
-                if (File.Exists(@"D:\css-survey-winforms-textfiles\survey - age.txt"))
+                if (File.Exists(@"D:\ccs-survey-winforms-textfiles\survey - age.txt"))
                 {
-                    string[] surveyee = File.ReadAllLines(@"D:\css-survey-winforms-textfiles\survey - age.txt");
+                    string[] surveyee = File.ReadAllLines(@"D:\ccs-survey-winforms-textfiles\survey - age.txt");
                     num = surveyee.Length;
                 }
 
@@ -101,21 +101,21 @@ namespace ccs_survey_winforms
         public void WritingStudentInfo(string age, string sex, string course)
         {
             // writing age of the surveyees in a separate text file
-            using (StreamWriter sa = File.AppendText(@"D:\css-survey-winforms-textfiles\survey - age.txt"))
+            using (StreamWriter sa = File.AppendText(@"D:\ccs-survey-winforms-textfiles\survey - age.txt"))
             {
                 sa.WriteLine(age);
                 sa.Close();
             }
 
             // writing the sex of the surveyee in a separate text file
-            using (StreamWriter sx = File.AppendText(@"D:\css-survey-winforms-textfiles\survey - sex.txt"))
+            using (StreamWriter sx = File.AppendText(@"D:\ccs-survey-winforms-textfiles\survey - sex.txt"))
             {
                 sx.WriteLine(sex.ToUpper());
                 sx.Close();
             }
 
             // writing the course of the surveyees in a separate text file
-            using (StreamWriter sc = File.AppendText(@"D:\css-survey-winforms-textfiles\survey - course.txt"))
+            using (StreamWriter sc = File.AppendText(@"D:\ccs-survey-winforms-textfiles\survey - course.txt"))
             {
                 sc.WriteLine(course.ToUpper());
                 sc.Close();
@@ -125,7 +125,7 @@ namespace ccs_survey_winforms
         public void WritingResults(double avg)
         {
             // writing the results of each surveyees in a seprate text file
-            using (StreamWriter sr = File.AppendText(@"D:\css-survey-winforms-textfiles\survey - results.txt"))
+            using (StreamWriter sr = File.AppendText(@"D:\ccs-survey-winforms-textfiles\survey - results.txt"))
             {
                 sr.WriteLine(avg);
                 sr.Close();
