@@ -25,7 +25,8 @@ namespace ccs_survey_winforms
 
         private void btnShowCurrentStatistics_Click(object sender, EventArgs e)
         {
-
+            StatisticsForm statisticsForm = new StatisticsForm();
+            statisticsForm.Show();
         }
 
         private void btnExit_Click(object sender, EventArgs e)

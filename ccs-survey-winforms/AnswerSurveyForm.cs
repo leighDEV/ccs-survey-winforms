@@ -49,12 +49,18 @@ namespace ccs_survey_winforms
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-            if (tbName.Text == "" && cboCourse.Text == "" && cboAge.Text == "" && cboSex.Text == "")
+            if (tbName.Text == "" || cboCourse.Text == "" || cboAge.Text == "" || cboSex.Text == "")
             {
                 MessageBox.Show("Please fill out information!");
             }
             else
             {
+                TextFile textFile = new TextFile();
+                string age = cboAge.SelectedItem.ToString(); // i made it string instead of int
+                string sex = cboSex.SelectedItem.ToString();
+                string course = cboAge.SelectedItem.ToString();
+
+                textFile.WritingStudentInfo(age, sex, course);
                 lblResult.Text = "Result: "; // show the result of survey
                 MessageBox.Show("Successfully Submitted!");
             } 

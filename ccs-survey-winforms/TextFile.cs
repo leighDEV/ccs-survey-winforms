@@ -98,7 +98,7 @@ namespace ccs_survey_winforms
             fs.Close();
         }
 
-        public void WritingStudentInfo(int age, string sex, string course)
+        public void WritingStudentInfo(string age, string sex, string course)
         {
             // writing age of the surveyees in a separate text file
             using (StreamWriter sa = File.AppendText(@"D:\css-survey-winforms-textfiles\survey - age.txt"))
