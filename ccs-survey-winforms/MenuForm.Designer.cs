@@ -65,6 +65,7 @@
             this.btnShowCurrentStatistics.TabIndex = 1;
             this.btnShowCurrentStatistics.Text = "Show Current Statistics";
             this.btnShowCurrentStatistics.UseVisualStyleBackColor = true;
+            this.btnShowCurrentStatistics.Click += new System.EventHandler(this.btnShowCurrentStatistics_Click);
             // 
             // btnExit
             // 
