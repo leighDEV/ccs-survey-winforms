@@ -71,6 +71,10 @@ namespace ccs_survey_winforms
                 textFile.WritingStudentInfo(age, sex, course);
                 lblResult.Text = "Result: "; // show the result of survey
                 MessageBox.Show("Successfully Submitted!");
+                tbName.ResetText();
+                cboAge.Items.Clear();
+                cboCourse.Items.Clear();
+                cboSex.Items.Clear();
             } 
         }
     }
