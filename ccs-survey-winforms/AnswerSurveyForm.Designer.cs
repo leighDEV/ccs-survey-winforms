@@ -44,11 +44,11 @@
             this.pnlStudentInfo = new System.Windows.Forms.Panel();
             this.lblS1 = new System.Windows.Forms.Label();
             this.pnlS1 = new System.Windows.Forms.Panel();
-            this.rbS1_5 = new System.Windows.Forms.RadioButton();
-            this.rnS1_4 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
             this.radioButton5 = new System.Windows.Forms.RadioButton();
+            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.rnS1_4 = new System.Windows.Forms.RadioButton();
+            this.rbS1_5 = new System.Windows.Forms.RadioButton();
             this.btnPrevious = new System.Windows.Forms.Button();
             this.btnNext = new System.Windows.Forms.Button();
             this.btnSubmit = new System.Windows.Forms.Button();
@@ -222,7 +222,7 @@
             this.lblStatements.Font = new System.Drawing.Font("Segoe UI Semilight", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStatements.Location = new System.Drawing.Point(44, 303);
             this.lblStatements.Name = "lblStatements";
-            this.lblStatements.Size = new System.Drawing.Size(750, 35);
+            this.lblStatements.Size = new System.Drawing.Size(110, 26);
             this.lblStatements.TabIndex = 0;
             this.lblStatements.Text = "Statements:";
             // 
@@ -307,38 +307,16 @@
             this.pnlS1.Size = new System.Drawing.Size(797, 116);
             this.pnlS1.TabIndex = 4;
             // 
-            // rbS1_5
+            // radioButton5
             // 
-            this.rbS1_5.AutoSize = true;
-            this.rbS1_5.Location = new System.Drawing.Point(32, 80);
-            this.rbS1_5.Name = "rbS1_5";
-            this.rbS1_5.Size = new System.Drawing.Size(40, 29);
-            this.rbS1_5.TabIndex = 1;
-            this.rbS1_5.TabStop = true;
-            this.rbS1_5.Text = "5";
-            this.rbS1_5.UseVisualStyleBackColor = true;
-            // 
-            // rnS1_4
-            // 
-            this.rnS1_4.AutoSize = true;
-            this.rnS1_4.Location = new System.Drawing.Point(174, 80);
-            this.rnS1_4.Name = "rnS1_4";
-            this.rnS1_4.Size = new System.Drawing.Size(40, 29);
-            this.rnS1_4.TabIndex = 1;
-            this.rnS1_4.TabStop = true;
-            this.rnS1_4.Text = "4";
-            this.rnS1_4.UseVisualStyleBackColor = true;
-            // 
-            // radioButton3
-            // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(316, 80);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(40, 29);
-            this.radioButton3.TabIndex = 1;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "3";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.radioButton5.AutoSize = true;
+            this.radioButton5.Location = new System.Drawing.Point(600, 80);
+            this.radioButton5.Name = "radioButton5";
+            this.radioButton5.Size = new System.Drawing.Size(40, 29);
+            this.radioButton5.TabIndex = 1;
+            this.radioButton5.TabStop = true;
+            this.radioButton5.Text = "1";
+            this.radioButton5.UseVisualStyleBackColor = true;
             // 
             // radioButton4
             // 
@@ -351,16 +329,38 @@
             this.radioButton4.Text = "2";
             this.radioButton4.UseVisualStyleBackColor = true;
             // 
-            // radioButton5
+            // radioButton3
             // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Location = new System.Drawing.Point(600, 80);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(40, 29);
-            this.radioButton5.TabIndex = 1;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "1";
-            this.radioButton5.UseVisualStyleBackColor = true;
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Location = new System.Drawing.Point(316, 80);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(40, 29);
+            this.radioButton3.TabIndex = 1;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.Text = "3";
+            this.radioButton3.UseVisualStyleBackColor = true;
+            // 
+            // rnS1_4
+            // 
+            this.rnS1_4.AutoSize = true;
+            this.rnS1_4.Location = new System.Drawing.Point(174, 80);
+            this.rnS1_4.Name = "rnS1_4";
+            this.rnS1_4.Size = new System.Drawing.Size(40, 29);
+            this.rnS1_4.TabIndex = 1;
+            this.rnS1_4.TabStop = true;
+            this.rnS1_4.Text = "4";
+            this.rnS1_4.UseVisualStyleBackColor = true;
+            // 
+            // rbS1_5
+            // 
+            this.rbS1_5.AutoSize = true;
+            this.rbS1_5.Location = new System.Drawing.Point(32, 80);
+            this.rbS1_5.Name = "rbS1_5";
+            this.rbS1_5.Size = new System.Drawing.Size(40, 29);
+            this.rbS1_5.TabIndex = 1;
+            this.rbS1_5.TabStop = true;
+            this.rbS1_5.Text = "5";
+            this.rbS1_5.UseVisualStyleBackColor = true;
             // 
             // btnPrevious
             // 
@@ -1042,6 +1042,7 @@
             this.rbS10_1.TabStop = true;
             this.rbS10_1.Text = "1";
             this.rbS10_1.UseVisualStyleBackColor = true;
+            this.rbS10_1.CheckedChanged += new System.EventHandler(this.rb1_CheckedChanged);
             // 
             // rbS10_2
             // 
@@ -1053,6 +1054,7 @@
             this.rbS10_2.TabStop = true;
             this.rbS10_2.Text = "2";
             this.rbS10_2.UseVisualStyleBackColor = true;
+            this.rbS10_2.CheckedChanged += new System.EventHandler(this.rb2_CheckedChanged);
             // 
             // rbS10_3
             // 
@@ -1064,6 +1066,7 @@
             this.rbS10_3.TabStop = true;
             this.rbS10_3.Text = "3";
             this.rbS10_3.UseVisualStyleBackColor = true;
+            this.rbS10_3.EnabledChanged += new System.EventHandler(this.rb3_CheckedChanged);
             // 
             // rbS10_4
             // 
@@ -1075,6 +1078,7 @@
             this.rbS10_4.TabStop = true;
             this.rbS10_4.Text = "4";
             this.rbS10_4.UseVisualStyleBackColor = true;
+            this.rbS10_4.CheckedChanged += new System.EventHandler(this.rb4_CheckedChanged);
             // 
             // rbS10_5
             // 
@@ -1086,6 +1090,7 @@
             this.rbS10_5.TabStop = true;
             this.rbS10_5.Text = "5";
             this.rbS10_5.UseVisualStyleBackColor = true;
+            this.rbS10_5.CheckedChanged += new System.EventHandler(this.rb5_CheckedChanged);
             // 
             // lblS10
             // 
