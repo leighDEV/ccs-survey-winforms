@@ -9,7 +9,7 @@ namespace ccs_survey_winforms
 {
     internal class TextFile
     {
-        public void WritingAllInfo(string name, int age, string sex, string course, int[] answers)
+        public void WritingAllInfo(string name, string age, string sex, string course, int[] answers)
         {
             // getting the average of all the answers
             double avg = Queryable.Average(answers.AsQueryable());
@@ -95,6 +95,7 @@ namespace ccs_survey_winforms
                 sw.WriteLine("\n==============================");
                 sw.Close();
             }
+            WritingResults(avg);
             fs.Close();
         }
 

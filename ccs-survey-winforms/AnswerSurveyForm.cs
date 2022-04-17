@@ -57,6 +57,7 @@ namespace ccs_survey_winforms
             else
             {
                 TextFile textFile = new TextFile();
+                string name = tbName.Text.ToString();
                 string age = cboAge.SelectedItem.ToString(); // i made it string instead of int
                 string sex = cboSex.SelectedItem.ToString();
                 string coursefull = cboCourse.SelectedItem.ToString();
@@ -70,7 +71,22 @@ namespace ccs_survey_winforms
                     course = "BSIT";
 
                 textFile.WritingStudentInfo(age, sex, course);
-                lblResult.Text = "Result: "; // show the result of survey
+                
+
+                int.TryParse(cboS1.Text, out answers[0]);
+                int.TryParse(cboS2.Text, out answers[1]);
+                int.TryParse(cboS3.Text, out answers[2]);
+                int.TryParse(cboS4.Text, out answers[3]);
+                int.TryParse(cboS5.Text, out answers[4]);
+                int.TryParse(cboS6.Text, out answers[5]);
+                int.TryParse(cboS7.Text, out answers[6]);
+                int.TryParse(cboS8.Text, out answers[7]);
+                int.TryParse(cboS9.Text, out answers[8]);
+                int.TryParse(cboS10.Text, out answers[9]);
+
+                textFile.WritingAllInfo(name, age, sex, course, answers);
+                
+
                 MessageBox.Show("Successfully Submitted!");
                 tbName.ResetText();
                 cboAge.Items.Clear();
