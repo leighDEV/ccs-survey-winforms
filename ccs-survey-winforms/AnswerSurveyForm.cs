@@ -71,7 +71,6 @@ namespace ccs_survey_winforms
                     course = "BSIT";
 
                 textFile.WritingStudentInfo(age, sex, course);
-                
 
                 int.TryParse(cboS1.Text, out answers[0]);
                 int.TryParse(cboS2.Text, out answers[1]);

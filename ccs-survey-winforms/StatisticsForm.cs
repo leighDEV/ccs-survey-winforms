@@ -27,6 +27,7 @@ namespace ccs_survey_winforms
         private void StatisticsForm_Load(object sender, EventArgs e)
         {
             ReadingStudentInfo();
+            ReadingResults();
             WritingStats();
         }
 
@@ -102,23 +103,23 @@ namespace ccs_survey_winforms
 
                 MatchCollection _stronglyAgree = Regex.Matches(contentResults, @"(?i)\b5\b");
                 stronglyAgree = (int)Math.Round((double)(100 * _stronglyAgree.Count) / arrayResults.Length);
-                Console.WriteLine($"Strongly Agree   : {stronglyAgree}%");
+                lblStronlyAgree.Text = $"Strongly Agree   : {stronglyAgree}%";
 
                 MatchCollection _agree = Regex.Matches(contentResults, @"(?i)\b4\b");
                 agree = (int)Math.Round((double)(100 * _agree.Count) / arrayResults.Length);
-                Console.WriteLine($"Agree            : {agree}%");
+                lblAgree.Text = $"Agree            : {agree}%";
 
                 MatchCollection _neutral = Regex.Matches(contentResults, @"(?i)\b3\b");
                 neutral = (int)Math.Round((double)(100 * _neutral.Count) / arrayResults.Length);
-                Console.WriteLine($"Neutral          : {neutral}%");
+                lblNeutral.Text = $"Neutral          : {neutral}%";
 
                 MatchCollection _disagree = Regex.Matches(contentResults, @"(?i)\b2\b");
                 disagree = (int)Math.Round((double)(100 * _disagree.Count) / arrayResults.Length);
-                Console.WriteLine($"Disagree         : { disagree}%");
+                lblDisagree.Text = $"Disagree         : { disagree}%";
 
                 MatchCollection _stronglyDisagree = Regex.Matches(contentResults, @"(?i)\b1\b");
                 stronglyDisagree = (int)Math.Round((double)(100 * _stronglyDisagree.Count) / arrayResults.Length);
-                Console.WriteLine($"Strongly Disagree: {stronglyDisagree}%");
+                lblStronlyDisagree.Text = $"Strongly Disagree: {stronglyDisagree}%";
                 readResults.Close();
             }
         }
