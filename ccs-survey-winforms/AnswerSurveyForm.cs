@@ -14,8 +14,7 @@ namespace ccs_survey_winforms
     {
         int index;
         List<Panel> panelListStatements = new List<Panel>();
-        int[] answers { get; set; } = new int[10];
-
+        
         public AnswerSurveyForm()
         {
             InitializeComponent();
@@ -61,6 +60,7 @@ namespace ccs_survey_winforms
                 string age = cboAge.SelectedItem.ToString(); // i made it string instead of int
                 string sex = cboSex.SelectedItem.ToString();
                 string coursefull = cboCourse.SelectedItem.ToString();
+                int[] answers = new int[10];
 
                 string course;
                 if (coursefull.Equals("Computer Science"))
@@ -84,7 +84,6 @@ namespace ccs_survey_winforms
                 int.TryParse(cboS10.Text, out answers[9]);
 
                 textFile.WritingAllInfo(name, age, sex, course, answers);
-                
 
                 MessageBox.Show("Successfully Submitted!");
                 tbName.ResetText();
@@ -93,6 +92,5 @@ namespace ccs_survey_winforms
                 cboSex.Items.Clear();
             }
         }
-
     }
 }

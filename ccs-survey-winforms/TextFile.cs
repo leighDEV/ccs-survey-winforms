@@ -95,7 +95,7 @@ namespace ccs_survey_winforms
                 sw.WriteLine("\n==============================");
                 sw.Close();
             }
-            WritingResults(avg);
+            WritingResults(total);
             fs.Close();
         }
 
