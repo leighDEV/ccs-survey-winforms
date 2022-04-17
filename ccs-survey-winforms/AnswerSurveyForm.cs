@@ -49,7 +49,10 @@ namespace ccs_survey_winforms
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-            if (tbName.Text == "" || cboCourse.Text == "" || cboAge.Text == "" || cboSex.Text == "")
+            if (tbName.Text == "" || cboCourse.Text == "" || cboAge.Text == "" || cboSex.Text == ""
+                || cboS1.Text == "" || cboS2.Text == "" || cboS3.Text == "" || cboS4.Text == "" ||
+                cboS5.Text == "" || cboS6.Text == "" || cboS7.Text == "" || cboS8.Text == "" ||
+                cboS9.Text == "" || cboS10.Text == "")
             {
                 MessageBox.Show("Please fill out information!");
             }
@@ -84,6 +87,7 @@ namespace ccs_survey_winforms
                 int.TryParse(cboS10.Text, out answers[9]);
 
                 textFile.WritingAllInfo(name, age, sex, course, answers);
+                lblResult.Text = $"Result: "; // still now working
 
                 MessageBox.Show("Successfully Submitted!");
                 tbName.ResetText();

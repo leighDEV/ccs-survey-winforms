@@ -28,6 +28,7 @@ namespace ccs_survey_winforms
                     num = surveyee.Length;
                 }
 
+                // has an error, the first one is two. should be one
                 sw.WriteLine($"Surveyee #{num + 1}"); // to show what number the surveyee is 
                 // info of surveyee
                 sw.WriteLine($"Name   : {name}");
