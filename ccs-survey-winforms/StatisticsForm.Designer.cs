@@ -53,6 +53,7 @@
             // 
             this.lblStudentInfo.AutoSize = true;
             this.lblStudentInfo.Font = new System.Drawing.Font("Segoe UI Light", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStudentInfo.ForeColor = System.Drawing.Color.SteelBlue;
             this.lblStudentInfo.Location = new System.Drawing.Point(43, 38);
             this.lblStudentInfo.Name = "lblStudentInfo";
             this.lblStudentInfo.Size = new System.Drawing.Size(187, 32);
@@ -103,7 +104,7 @@
             // 
             this.lblFemale.AutoSize = true;
             this.lblFemale.Font = new System.Drawing.Font("Segoe UI Semilight", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFemale.Location = new System.Drawing.Point(44, 344);
+            this.lblFemale.Location = new System.Drawing.Point(441, 191);
             this.lblFemale.Name = "lblFemale";
             this.lblFemale.Size = new System.Drawing.Size(75, 25);
             this.lblFemale.TabIndex = 2;
@@ -113,7 +114,7 @@
             // 
             this.lblMale.AutoSize = true;
             this.lblMale.Font = new System.Drawing.Font("Segoe UI Semilight", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMale.Location = new System.Drawing.Point(44, 369);
+            this.lblMale.Location = new System.Drawing.Point(441, 216);
             this.lblMale.Name = "lblMale";
             this.lblMale.Size = new System.Drawing.Size(56, 25);
             this.lblMale.TabIndex = 2;
@@ -123,7 +124,7 @@
             // 
             this.lblComputerScience.AutoSize = true;
             this.lblComputerScience.Font = new System.Drawing.Font("Segoe UI Semilight", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblComputerScience.Location = new System.Drawing.Point(393, 191);
+            this.lblComputerScience.Location = new System.Drawing.Point(44, 319);
             this.lblComputerScience.Name = "lblComputerScience";
             this.lblComputerScience.Size = new System.Drawing.Size(165, 25);
             this.lblComputerScience.TabIndex = 2;
@@ -133,7 +134,7 @@
             // 
             this.lblInformationScience.AutoSize = true;
             this.lblInformationScience.Font = new System.Drawing.Font("Segoe UI Semilight", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblInformationScience.Location = new System.Drawing.Point(393, 216);
+            this.lblInformationScience.Location = new System.Drawing.Point(44, 344);
             this.lblInformationScience.Name = "lblInformationScience";
             this.lblInformationScience.Size = new System.Drawing.Size(174, 25);
             this.lblInformationScience.TabIndex = 2;
@@ -143,17 +144,17 @@
             // 
             this.lblInformatinTechnology.AutoSize = true;
             this.lblInformatinTechnology.Font = new System.Drawing.Font("Segoe UI Semilight", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblInformatinTechnology.Location = new System.Drawing.Point(393, 241);
+            this.lblInformatinTechnology.Location = new System.Drawing.Point(44, 369);
             this.lblInformatinTechnology.Name = "lblInformatinTechnology";
-            this.lblInformatinTechnology.Size = new System.Drawing.Size(205, 25);
+            this.lblInformatinTechnology.Size = new System.Drawing.Size(209, 25);
             this.lblInformatinTechnology.TabIndex = 2;
-            this.lblInformatinTechnology.Text = "Information Technology";
+            this.lblInformatinTechnology.Text = "Information Technology:";
             // 
             // lblStronlyAgree
             // 
             this.lblStronlyAgree.AutoSize = true;
             this.lblStronlyAgree.Font = new System.Drawing.Font("Segoe UI Semilight", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStronlyAgree.Location = new System.Drawing.Point(393, 319);
+            this.lblStronlyAgree.Location = new System.Drawing.Point(441, 305);
             this.lblStronlyAgree.Name = "lblStronlyAgree";
             this.lblStronlyAgree.Size = new System.Drawing.Size(141, 25);
             this.lblStronlyAgree.TabIndex = 2;
@@ -163,7 +164,7 @@
             // 
             this.lblAgree.AutoSize = true;
             this.lblAgree.Font = new System.Drawing.Font("Segoe UI Semilight", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAgree.Location = new System.Drawing.Point(393, 344);
+            this.lblAgree.Location = new System.Drawing.Point(441, 330);
             this.lblAgree.Name = "lblAgree";
             this.lblAgree.Size = new System.Drawing.Size(70, 25);
             this.lblAgree.TabIndex = 2;
@@ -173,7 +174,7 @@
             // 
             this.lblNeutral.AutoSize = true;
             this.lblNeutral.Font = new System.Drawing.Font("Segoe UI Semilight", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNeutral.Location = new System.Drawing.Point(393, 369);
+            this.lblNeutral.Location = new System.Drawing.Point(441, 355);
             this.lblNeutral.Name = "lblNeutral";
             this.lblNeutral.Size = new System.Drawing.Size(76, 25);
             this.lblNeutral.TabIndex = 2;
@@ -183,7 +184,7 @@
             // 
             this.lblDisagree.AutoSize = true;
             this.lblDisagree.Font = new System.Drawing.Font("Segoe UI Semilight", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDisagree.Location = new System.Drawing.Point(393, 395);
+            this.lblDisagree.Location = new System.Drawing.Point(441, 381);
             this.lblDisagree.Name = "lblDisagree";
             this.lblDisagree.Size = new System.Drawing.Size(88, 25);
             this.lblDisagree.TabIndex = 2;
@@ -193,7 +194,7 @@
             // 
             this.lblStronlyDisagree.AutoSize = true;
             this.lblStronlyDisagree.Font = new System.Drawing.Font("Segoe UI Semilight", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStronlyDisagree.Location = new System.Drawing.Point(393, 420);
+            this.lblStronlyDisagree.Location = new System.Drawing.Point(441, 406);
             this.lblStronlyDisagree.Name = "lblStronlyDisagree";
             this.lblStronlyDisagree.Size = new System.Drawing.Size(164, 25);
             this.lblStronlyDisagree.TabIndex = 2;
@@ -203,6 +204,7 @@
             // 
             this.lblAge.AutoSize = true;
             this.lblAge.Font = new System.Drawing.Font("Segoe UI Light", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAge.ForeColor = System.Drawing.Color.SteelBlue;
             this.lblAge.Location = new System.Drawing.Point(43, 159);
             this.lblAge.Name = "lblAge";
             this.lblAge.Size = new System.Drawing.Size(54, 32);
@@ -213,7 +215,8 @@
             // 
             this.lblSex.AutoSize = true;
             this.lblSex.Font = new System.Drawing.Font("Segoe UI Light", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSex.Location = new System.Drawing.Point(43, 312);
+            this.lblSex.ForeColor = System.Drawing.Color.SteelBlue;
+            this.lblSex.Location = new System.Drawing.Point(440, 159);
             this.lblSex.Name = "lblSex";
             this.lblSex.Size = new System.Drawing.Size(48, 32);
             this.lblSex.TabIndex = 1;
@@ -223,7 +226,8 @@
             // 
             this.lblCourse.AutoSize = true;
             this.lblCourse.Font = new System.Drawing.Font("Segoe UI Light", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCourse.Location = new System.Drawing.Point(392, 159);
+            this.lblCourse.ForeColor = System.Drawing.Color.SteelBlue;
+            this.lblCourse.Location = new System.Drawing.Point(43, 287);
             this.lblCourse.Name = "lblCourse";
             this.lblCourse.Size = new System.Drawing.Size(89, 32);
             this.lblCourse.TabIndex = 1;
@@ -233,7 +237,8 @@
             // 
             this.lblResult.AutoSize = true;
             this.lblResult.Font = new System.Drawing.Font("Segoe UI Light", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResult.Location = new System.Drawing.Point(392, 287);
+            this.lblResult.ForeColor = System.Drawing.Color.SteelBlue;
+            this.lblResult.Location = new System.Drawing.Point(440, 273);
             this.lblResult.Name = "lblResult";
             this.lblResult.Size = new System.Drawing.Size(73, 32);
             this.lblResult.TabIndex = 1;
@@ -265,7 +270,7 @@
             this.Controls.Add(this.lblStudentInfo);
             this.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.MaximizeBox = false;
             this.Name = "StatisticsForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

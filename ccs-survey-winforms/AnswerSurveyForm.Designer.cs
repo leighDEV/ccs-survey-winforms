@@ -44,38 +44,38 @@
             this.pnlStudentInfo = new System.Windows.Forms.Panel();
             this.lblS1 = new System.Windows.Forms.Label();
             this.pnlS1 = new System.Windows.Forms.Panel();
+            this.cboS1 = new System.Windows.Forms.ComboBox();
             this.btnPrevious = new System.Windows.Forms.Button();
             this.btnNext = new System.Windows.Forms.Button();
             this.btnSubmit = new System.Windows.Forms.Button();
             this.pnlS2 = new System.Windows.Forms.Panel();
+            this.cboS2 = new System.Windows.Forms.ComboBox();
             this.lblS2 = new System.Windows.Forms.Label();
             this.pnlS3 = new System.Windows.Forms.Panel();
+            this.cboS3 = new System.Windows.Forms.ComboBox();
             this.lblS3 = new System.Windows.Forms.Label();
             this.pnlS4 = new System.Windows.Forms.Panel();
+            this.cboS4 = new System.Windows.Forms.ComboBox();
             this.lblS4 = new System.Windows.Forms.Label();
             this.pnlS5 = new System.Windows.Forms.Panel();
+            this.cboS5 = new System.Windows.Forms.ComboBox();
             this.lblS5 = new System.Windows.Forms.Label();
             this.pnlS6 = new System.Windows.Forms.Panel();
+            this.cboS6 = new System.Windows.Forms.ComboBox();
             this.lblS6 = new System.Windows.Forms.Label();
             this.pnlS7 = new System.Windows.Forms.Panel();
+            this.cboS7 = new System.Windows.Forms.ComboBox();
             this.lblS7 = new System.Windows.Forms.Label();
             this.pnlS8 = new System.Windows.Forms.Panel();
+            this.cboS8 = new System.Windows.Forms.ComboBox();
             this.lblS8 = new System.Windows.Forms.Label();
             this.pnlS9 = new System.Windows.Forms.Panel();
+            this.cboS9 = new System.Windows.Forms.ComboBox();
             this.lblS9 = new System.Windows.Forms.Label();
             this.pnlS10 = new System.Windows.Forms.Panel();
             this.lblS10 = new System.Windows.Forms.Label();
-            this.lblResult = new System.Windows.Forms.Label();
             this.cboS10 = new System.Windows.Forms.ComboBox();
-            this.cboS9 = new System.Windows.Forms.ComboBox();
-            this.cboS8 = new System.Windows.Forms.ComboBox();
-            this.cboS7 = new System.Windows.Forms.ComboBox();
-            this.cboS6 = new System.Windows.Forms.ComboBox();
-            this.cboS5 = new System.Windows.Forms.ComboBox();
-            this.cboS4 = new System.Windows.Forms.ComboBox();
-            this.cboS3 = new System.Windows.Forms.ComboBox();
-            this.cboS2 = new System.Windows.Forms.ComboBox();
-            this.cboS1 = new System.Windows.Forms.ComboBox();
+            this.lblResult = new System.Windows.Forms.Label();
             this.pnlStudentInfo.SuspendLayout();
             this.pnlS1.SuspendLayout();
             this.pnlS2.SuspendLayout();
@@ -93,6 +93,7 @@
             // 
             this.lblStudentInfo.AutoSize = true;
             this.lblStudentInfo.Font = new System.Drawing.Font("Segoe UI Light", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStudentInfo.ForeColor = System.Drawing.Color.SteelBlue;
             this.lblStudentInfo.Location = new System.Drawing.Point(11, 20);
             this.lblStudentInfo.Name = "lblStudentInfo";
             this.lblStudentInfo.Size = new System.Drawing.Size(227, 32);
@@ -151,6 +152,7 @@
             // 
             this.lblAnswerSurvey.AutoSize = true;
             this.lblAnswerSurvey.Font = new System.Drawing.Font("Segoe UI Light", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAnswerSurvey.ForeColor = System.Drawing.Color.SteelBlue;
             this.lblAnswerSurvey.Location = new System.Drawing.Point(23, 188);
             this.lblAnswerSurvey.Name = "lblAnswerSurvey";
             this.lblAnswerSurvey.Size = new System.Drawing.Size(162, 32);
@@ -263,6 +265,22 @@
             this.pnlS1.Size = new System.Drawing.Size(797, 116);
             this.pnlS1.TabIndex = 4;
             // 
+            // cboS1
+            // 
+            this.cboS1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboS1.Font = new System.Drawing.Font("Segoe UI Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboS1.FormattingEnabled = true;
+            this.cboS1.Items.AddRange(new object[] {
+            "5",
+            "4",
+            "3",
+            "2",
+            "1"});
+            this.cboS1.Location = new System.Drawing.Point(298, 64);
+            this.cboS1.Name = "cboS1";
+            this.cboS1.Size = new System.Drawing.Size(199, 29);
+            this.cboS1.TabIndex = 6;
+            // 
             // btnPrevious
             // 
             this.btnPrevious.Location = new System.Drawing.Point(18, 477);
@@ -303,6 +321,22 @@
             this.pnlS2.Size = new System.Drawing.Size(797, 116);
             this.pnlS2.TabIndex = 4;
             // 
+            // cboS2
+            // 
+            this.cboS2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboS2.Font = new System.Drawing.Font("Segoe UI Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboS2.FormattingEnabled = true;
+            this.cboS2.Items.AddRange(new object[] {
+            "5",
+            "4",
+            "3",
+            "2",
+            "1"});
+            this.cboS2.Location = new System.Drawing.Point(298, 64);
+            this.cboS2.Name = "cboS2";
+            this.cboS2.Size = new System.Drawing.Size(199, 29);
+            this.cboS2.TabIndex = 6;
+            // 
             // lblS2
             // 
             this.lblS2.Font = new System.Drawing.Font("Segoe UI Semilight", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -321,6 +355,22 @@
             this.pnlS3.Name = "pnlS3";
             this.pnlS3.Size = new System.Drawing.Size(797, 116);
             this.pnlS3.TabIndex = 4;
+            // 
+            // cboS3
+            // 
+            this.cboS3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboS3.Font = new System.Drawing.Font("Segoe UI Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboS3.FormattingEnabled = true;
+            this.cboS3.Items.AddRange(new object[] {
+            "5",
+            "4",
+            "3",
+            "2",
+            "1"});
+            this.cboS3.Location = new System.Drawing.Point(298, 64);
+            this.cboS3.Name = "cboS3";
+            this.cboS3.Size = new System.Drawing.Size(199, 29);
+            this.cboS3.TabIndex = 6;
             // 
             // lblS3
             // 
@@ -341,6 +391,22 @@
             this.pnlS4.Size = new System.Drawing.Size(797, 116);
             this.pnlS4.TabIndex = 4;
             // 
+            // cboS4
+            // 
+            this.cboS4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboS4.Font = new System.Drawing.Font("Segoe UI Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboS4.FormattingEnabled = true;
+            this.cboS4.Items.AddRange(new object[] {
+            "5",
+            "4",
+            "3",
+            "2",
+            "1"});
+            this.cboS4.Location = new System.Drawing.Point(298, 64);
+            this.cboS4.Name = "cboS4";
+            this.cboS4.Size = new System.Drawing.Size(199, 29);
+            this.cboS4.TabIndex = 6;
+            // 
             // lblS4
             // 
             this.lblS4.Font = new System.Drawing.Font("Segoe UI Semilight", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -360,6 +426,22 @@
             this.pnlS5.Size = new System.Drawing.Size(797, 116);
             this.pnlS5.TabIndex = 4;
             // 
+            // cboS5
+            // 
+            this.cboS5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboS5.Font = new System.Drawing.Font("Segoe UI Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboS5.FormattingEnabled = true;
+            this.cboS5.Items.AddRange(new object[] {
+            "5",
+            "4",
+            "3",
+            "2",
+            "1"});
+            this.cboS5.Location = new System.Drawing.Point(298, 64);
+            this.cboS5.Name = "cboS5";
+            this.cboS5.Size = new System.Drawing.Size(199, 29);
+            this.cboS5.TabIndex = 6;
+            // 
             // lblS5
             // 
             this.lblS5.Font = new System.Drawing.Font("Segoe UI Semilight", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -378,6 +460,22 @@
             this.pnlS6.Name = "pnlS6";
             this.pnlS6.Size = new System.Drawing.Size(797, 116);
             this.pnlS6.TabIndex = 4;
+            // 
+            // cboS6
+            // 
+            this.cboS6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboS6.Font = new System.Drawing.Font("Segoe UI Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboS6.FormattingEnabled = true;
+            this.cboS6.Items.AddRange(new object[] {
+            "5",
+            "4",
+            "3",
+            "2",
+            "1"});
+            this.cboS6.Location = new System.Drawing.Point(298, 64);
+            this.cboS6.Name = "cboS6";
+            this.cboS6.Size = new System.Drawing.Size(199, 29);
+            this.cboS6.TabIndex = 6;
             // 
             // lblS6
             // 
@@ -399,6 +497,22 @@
             this.pnlS7.Size = new System.Drawing.Size(797, 116);
             this.pnlS7.TabIndex = 4;
             // 
+            // cboS7
+            // 
+            this.cboS7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboS7.Font = new System.Drawing.Font("Segoe UI Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboS7.FormattingEnabled = true;
+            this.cboS7.Items.AddRange(new object[] {
+            "5",
+            "4",
+            "3",
+            "2",
+            "1"});
+            this.cboS7.Location = new System.Drawing.Point(298, 64);
+            this.cboS7.Name = "cboS7";
+            this.cboS7.Size = new System.Drawing.Size(199, 29);
+            this.cboS7.TabIndex = 6;
+            // 
             // lblS7
             // 
             this.lblS7.Font = new System.Drawing.Font("Segoe UI Semilight", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -417,6 +531,22 @@
             this.pnlS8.Name = "pnlS8";
             this.pnlS8.Size = new System.Drawing.Size(797, 116);
             this.pnlS8.TabIndex = 4;
+            // 
+            // cboS8
+            // 
+            this.cboS8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboS8.Font = new System.Drawing.Font("Segoe UI Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboS8.FormattingEnabled = true;
+            this.cboS8.Items.AddRange(new object[] {
+            "5",
+            "4",
+            "3",
+            "2",
+            "1"});
+            this.cboS8.Location = new System.Drawing.Point(298, 64);
+            this.cboS8.Name = "cboS8";
+            this.cboS8.Size = new System.Drawing.Size(199, 29);
+            this.cboS8.TabIndex = 6;
             // 
             // lblS8
             // 
@@ -437,6 +567,22 @@
             this.pnlS9.Name = "pnlS9";
             this.pnlS9.Size = new System.Drawing.Size(797, 116);
             this.pnlS9.TabIndex = 4;
+            // 
+            // cboS9
+            // 
+            this.cboS9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboS9.Font = new System.Drawing.Font("Segoe UI Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboS9.FormattingEnabled = true;
+            this.cboS9.Items.AddRange(new object[] {
+            "5",
+            "4",
+            "3",
+            "2",
+            "1"});
+            this.cboS9.Location = new System.Drawing.Point(298, 64);
+            this.cboS9.Name = "cboS9";
+            this.cboS9.Size = new System.Drawing.Size(199, 29);
+            this.cboS9.TabIndex = 6;
             // 
             // lblS9
             // 
@@ -467,15 +613,6 @@
             this.lblS10.Text = "10. I get frustrated when the internet is slow, and as a result, I get stressed a" +
     "nd upset.";
             // 
-            // lblResult
-            // 
-            this.lblResult.Font = new System.Drawing.Font("Segoe UI Semilight", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResult.Location = new System.Drawing.Point(279, 481);
-            this.lblResult.Name = "lblResult";
-            this.lblResult.Size = new System.Drawing.Size(284, 25);
-            this.lblResult.TabIndex = 0;
-            this.lblResult.Text = "Result: ";
-            // 
             // cboS10
             // 
             this.cboS10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -492,149 +629,14 @@
             this.cboS10.Size = new System.Drawing.Size(199, 29);
             this.cboS10.TabIndex = 2;
             // 
-            // cboS9
+            // lblResult
             // 
-            this.cboS9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboS9.Font = new System.Drawing.Font("Segoe UI Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboS9.FormattingEnabled = true;
-            this.cboS9.Items.AddRange(new object[] {
-            "5",
-            "4",
-            "3",
-            "2",
-            "1"});
-            this.cboS9.Location = new System.Drawing.Point(298, 64);
-            this.cboS9.Name = "cboS9";
-            this.cboS9.Size = new System.Drawing.Size(199, 29);
-            this.cboS9.TabIndex = 6;
-            // 
-            // cboS8
-            // 
-            this.cboS8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboS8.Font = new System.Drawing.Font("Segoe UI Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboS8.FormattingEnabled = true;
-            this.cboS8.Items.AddRange(new object[] {
-            "5",
-            "4",
-            "3",
-            "2",
-            "1"});
-            this.cboS8.Location = new System.Drawing.Point(298, 64);
-            this.cboS8.Name = "cboS8";
-            this.cboS8.Size = new System.Drawing.Size(199, 29);
-            this.cboS8.TabIndex = 6;
-            // 
-            // cboS7
-            // 
-            this.cboS7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboS7.Font = new System.Drawing.Font("Segoe UI Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboS7.FormattingEnabled = true;
-            this.cboS7.Items.AddRange(new object[] {
-            "5",
-            "4",
-            "3",
-            "2",
-            "1"});
-            this.cboS7.Location = new System.Drawing.Point(298, 64);
-            this.cboS7.Name = "cboS7";
-            this.cboS7.Size = new System.Drawing.Size(199, 29);
-            this.cboS7.TabIndex = 6;
-            // 
-            // cboS6
-            // 
-            this.cboS6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboS6.Font = new System.Drawing.Font("Segoe UI Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboS6.FormattingEnabled = true;
-            this.cboS6.Items.AddRange(new object[] {
-            "5",
-            "4",
-            "3",
-            "2",
-            "1"});
-            this.cboS6.Location = new System.Drawing.Point(298, 64);
-            this.cboS6.Name = "cboS6";
-            this.cboS6.Size = new System.Drawing.Size(199, 29);
-            this.cboS6.TabIndex = 6;
-            // 
-            // cboS5
-            // 
-            this.cboS5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboS5.Font = new System.Drawing.Font("Segoe UI Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboS5.FormattingEnabled = true;
-            this.cboS5.Items.AddRange(new object[] {
-            "5",
-            "4",
-            "3",
-            "2",
-            "1"});
-            this.cboS5.Location = new System.Drawing.Point(298, 64);
-            this.cboS5.Name = "cboS5";
-            this.cboS5.Size = new System.Drawing.Size(199, 29);
-            this.cboS5.TabIndex = 6;
-            // 
-            // cboS4
-            // 
-            this.cboS4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboS4.Font = new System.Drawing.Font("Segoe UI Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboS4.FormattingEnabled = true;
-            this.cboS4.Items.AddRange(new object[] {
-            "5",
-            "4",
-            "3",
-            "2",
-            "1"});
-            this.cboS4.Location = new System.Drawing.Point(298, 64);
-            this.cboS4.Name = "cboS4";
-            this.cboS4.Size = new System.Drawing.Size(199, 29);
-            this.cboS4.TabIndex = 6;
-            // 
-            // cboS3
-            // 
-            this.cboS3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboS3.Font = new System.Drawing.Font("Segoe UI Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboS3.FormattingEnabled = true;
-            this.cboS3.Items.AddRange(new object[] {
-            "5",
-            "4",
-            "3",
-            "2",
-            "1"});
-            this.cboS3.Location = new System.Drawing.Point(298, 64);
-            this.cboS3.Name = "cboS3";
-            this.cboS3.Size = new System.Drawing.Size(199, 29);
-            this.cboS3.TabIndex = 6;
-            // 
-            // cboS2
-            // 
-            this.cboS2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboS2.Font = new System.Drawing.Font("Segoe UI Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboS2.FormattingEnabled = true;
-            this.cboS2.Items.AddRange(new object[] {
-            "5",
-            "4",
-            "3",
-            "2",
-            "1"});
-            this.cboS2.Location = new System.Drawing.Point(298, 64);
-            this.cboS2.Name = "cboS2";
-            this.cboS2.Size = new System.Drawing.Size(199, 29);
-            this.cboS2.TabIndex = 6;
-            // 
-            // cboS1
-            // 
-            this.cboS1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboS1.Font = new System.Drawing.Font("Segoe UI Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboS1.FormattingEnabled = true;
-            this.cboS1.Items.AddRange(new object[] {
-            "5",
-            "4",
-            "3",
-            "2",
-            "1"});
-            this.cboS1.Location = new System.Drawing.Point(298, 64);
-            this.cboS1.Name = "cboS1";
-            this.cboS1.Size = new System.Drawing.Size(199, 29);
-            this.cboS1.TabIndex = 6;
+            this.lblResult.Font = new System.Drawing.Font("Segoe UI Semilight", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResult.Location = new System.Drawing.Point(279, 481);
+            this.lblResult.Name = "lblResult";
+            this.lblResult.Size = new System.Drawing.Size(284, 25);
+            this.lblResult.TabIndex = 0;
+            this.lblResult.Text = "Result: ";
             // 
             // AnswerSurveyForm
             // 
