@@ -643,6 +643,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(840, 582);
             this.Controls.Add(this.btnNext);
             this.Controls.Add(this.btnSubmit);
