@@ -17,7 +17,7 @@ namespace ccs_survey_winforms
         int eighteen, nineteen, twenty, female, male, bscs, bsis, bsit;
         int stronglyAgree, agree, neutral, disagree, stronglyDisagree;
 
-        string[] arrayAge = File.ReadAllLines(@"D:\ccs-survey-winforms-textfiles\survey - age.txt");
+        string[] arrayAge = File.ReadAllLines(@"D:\survey - age.txt");
 
         public StatisticsForm()
         {
@@ -37,7 +37,7 @@ namespace ccs_survey_winforms
         private void ReadingStudentInfo()
         {
             // method for reading the age in the text file to show the statistics
-            using (StreamReader readAge = new StreamReader(@"D:\ccs-survey-winforms-textfiles\survey - age.txt"))
+            using (StreamReader readAge = new StreamReader(@"D:\survey - age.txt"))
             {
                 lblTotalSurveyee.Text = $"Total number of surveyee: {arrayAge.Length}";
                 string contentsAge = readAge.ReadToEnd();
@@ -57,10 +57,10 @@ namespace ccs_survey_winforms
             }
 
             // method for reading the sex in the text file to show the statistics
-            using (StreamReader readSex = File.OpenText(@"D:\ccs-survey-winforms-textfiles\survey - sex.txt"))
+            using (StreamReader readSex = File.OpenText(@"D:\survey - sex.txt"))
             {
                 string contentsSex = readSex.ReadToEnd();
-                string[] arraySex = File.ReadAllLines(@"D:\ccs-survey-winforms-textfiles\survey - sex.txt");
+                string[] arraySex = File.ReadAllLines(@"D:\survey - sex.txt");
 
                 MatchCollection _female = Regex.Matches(contentsSex, @"(?i)\bFEMALE\b");
                 female = (int)Math.Round((double)(100 * _female.Count) / arraySex.Length);
@@ -73,10 +73,10 @@ namespace ccs_survey_winforms
             }
 
             // method for reading the course in the text file to show the statistics
-            using (StreamReader readCourse = File.OpenText(@"D:\ccs-survey-winforms-textfiles\survey - course.txt"))
+            using (StreamReader readCourse = File.OpenText(@"D:\survey - course.txt"))
             {
                 string contentsCourse = readCourse.ReadToEnd();
-                string[] arrayCourse = File.ReadAllLines(@"D:\ccs-survey-winforms-textfiles\survey - course.txt");
+                string[] arrayCourse = File.ReadAllLines(@"D:\survey - course.txt");
 
                 MatchCollection _bscs = Regex.Matches(contentsCourse, @"(?i)\bBSCS\b");
                 bscs = (int)Math.Round((double)(100 * _bscs.Count) / arrayCourse.Length);
@@ -96,10 +96,10 @@ namespace ccs_survey_winforms
         // method for reading the results of the surveyees inside the text file for statistics
         private void ReadingResults()
         {
-            using (StreamReader readResults = File.OpenText(@"D:\ccs-survey-winforms-textfiles\survey - results.txt"))
+            using (StreamReader readResults = File.OpenText(@"D:\survey - results.txt"))
             {
                 string contentResults = readResults.ReadToEnd();
-                string[] arrayResults = File.ReadAllLines(@"D:\ccs-survey-winforms-textfiles\survey - results.txt");
+                string[] arrayResults = File.ReadAllLines(@"D:\survey - results.txt");
 
                 MatchCollection _stronglyAgree = Regex.Matches(contentResults, @"(?i)\b5\b");
                 stronglyAgree = (int)Math.Round((double)(100 * _stronglyAgree.Count) / arrayResults.Length);
@@ -127,7 +127,7 @@ namespace ccs_survey_winforms
         // method for writing the stats in a separate text file
         private void WritingStats()
         {
-            using (StreamWriter ss = new StreamWriter(@"D:\ccs-survey-winforms-textfiles\survey - statistics.txt"))
+            using (StreamWriter ss = new StreamWriter(@"D:\survey - statistics.txt"))
             {
                 ss.WriteLine("Survey's Statistics");
                 ss.WriteLine($"\nTotal number of surveyee: {arrayAge.Length}");
