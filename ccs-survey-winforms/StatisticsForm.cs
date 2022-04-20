@@ -24,6 +24,11 @@ namespace ccs_survey_winforms
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Load the Statistics Form
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void StatisticsForm_Load(object sender, EventArgs e)
         {
             ReadingStudentInfo();
@@ -32,7 +37,7 @@ namespace ccs_survey_winforms
         }
 
         /// <summary>
-        /// Reading age, sex, course from text files
+        /// Reading age, sex, course from each of its own text file
         /// </summary>
         private void ReadingStudentInfo()
         {
@@ -93,7 +98,9 @@ namespace ccs_survey_winforms
             }
         }
 
-        // method for reading the results of the surveyees inside the text file for statistics
+        /// <summary>
+        /// Reading the results of the surveyees inside its text file
+        /// </summary>
         private void ReadingResults()
         {
             using (StreamReader readResults = File.OpenText(@"D:\survey - results.txt"))
@@ -124,7 +131,9 @@ namespace ccs_survey_winforms
             }
         }
 
-        // method for writing the stats in a separate text file
+        /// <summary>
+        /// Writing the statistics in a separate text file
+        /// </summary>
         private void WritingStats()
         {
             using (StreamWriter ss = new StreamWriter(@"D:\survey - statistics.txt"))

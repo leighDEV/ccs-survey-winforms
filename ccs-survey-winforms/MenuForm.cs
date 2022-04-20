@@ -17,18 +17,33 @@ namespace ccs_survey_winforms
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Clicking the Answer Survey button
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnAnswerSurvey_Click(object sender, EventArgs e)
         {
             AnswerSurveyForm answerSurveyForm = new AnswerSurveyForm();
             answerSurveyForm.Show();
         }
 
+        /// <summary>
+        /// Clicking the Show Current Statistics button
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnShowCurrentStatistics_Click(object sender, EventArgs e)
         {
             StatisticsForm statisticsForm = new StatisticsForm();
             statisticsForm.Show();
         }
 
+        /// <summary>
+        /// Clicking the Exit button
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();

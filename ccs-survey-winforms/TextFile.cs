@@ -9,6 +9,14 @@ namespace ccs_survey_winforms
 {
     internal class TextFile
     {
+        /// <summary>
+        /// Writing all the information in a text file
+        /// </summary>
+        /// <param name="name"></param>
+        /// <param name="age"></param>
+        /// <param name="sex"></param>
+        /// <param name="course"></param>
+        /// <param name="answers"></param>
         public void WritingAllInfo(string name, string age, string sex, string course, int[] answers)
         {
             // getting the average of all the answers
@@ -100,6 +108,12 @@ namespace ccs_survey_winforms
             fs.Close();
         }
 
+        /// <summary>
+        /// Writing student's information in each own of its own text file.
+        /// </summary>
+        /// <param name="age"></param>
+        /// <param name="sex"></param>
+        /// <param name="course"></param>
         public void WritingStudentInfo(string age, string sex, string course)
         {
             // writing age of the surveyees in a separate text file
@@ -124,6 +138,10 @@ namespace ccs_survey_winforms
             }
         }
 
+        /// <summary>
+        /// Writing results in its own textfile
+        /// </summary>
+        /// <param name="avg"></param>
         public void WritingResults(double avg)
         {
             // writing the results of each surveyees in a seprate text file

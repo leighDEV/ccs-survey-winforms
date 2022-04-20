@@ -20,6 +20,11 @@ namespace ccs_survey_winforms
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Load the Answer Survey Form
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void AnswerSurveyForm_Load(object sender, EventArgs e)
         {
             panelListStatements.Add(pnlS1);
@@ -35,18 +40,33 @@ namespace ccs_survey_winforms
             panelListStatements[index].BringToFront();
         }
 
+        /// <summary>
+        /// Clicking the Previous button
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnPrevious_Click(object sender, EventArgs e)
         {
             if (index > 0)
                 panelListStatements[--index].BringToFront();
         }
 
+        /// <summary>
+        /// Clicking the Next button
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnNext_Click(object sender, EventArgs e)
         {
             if (index < panelListStatements.Count - 1)
                 panelListStatements[++index].BringToFront();
         }
 
+        /// <summary>
+        /// Clicking the Submit button
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnSubmit_Click(object sender, EventArgs e)
         {
             if (tbName.Text == "" || cboCourse.Text == "" || cboAge.Text == "" || cboSex.Text == ""
